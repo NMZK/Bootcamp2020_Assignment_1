@@ -28,6 +28,6 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Installing surge
-          run: npm install --global surge
+        run: npm install --global surge
       - name: deploying using surge
-          run: surge ./ piaic76509.surge.sh --token ${{ secrets.SECURE_TOKEN }}
+        run: surge ./ piaic76509.surge.sh --token ${{ secrets.SECURE_TOKEN }}
